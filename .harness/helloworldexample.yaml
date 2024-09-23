@@ -39,7 +39,7 @@ pipeline:
                     connectorRef: DockerHub_CICD
                     repo: alejandrosoto27/hello-world-example-nodejs
                     tags:
-                      - latest
+                      - <+lastPublished.tag>
     - stage:
         name: Deploy
         identifier: Deploy
